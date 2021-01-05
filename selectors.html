@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS Selectors</title>
+    <style>
+        h1{
+            background-color: rebeccapurple;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div p{
+            color: yellow;
+            font-weight: bold;
+            background-color: green;    
+        } */
+        /* div>p{
+            color: orange;
+            font-weight: bold;
+            background-color: orchid;
+        } */
+        div+p{
+            background-color: palegreen;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is More on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul><li><p>this is a list paragraph</p></li>
+            <li>this will not get affected</li>
+        <p>this is a paragraph inside ul</p></ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outer most paragraph</p>
+</body>
+</html>
