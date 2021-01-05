@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animations -Keyframes</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: greenyellow;
+        }
+        .box{
+            background-color: green;
+            width: 175px;
+            height: 150px;
+            border: 2px solid red;
+            position: relative;
+            animation-name: prasad;
+            animation-name: prasad2;
+            animation-duration: 10s;
+            animation-iteration-count:1;
+            text-align: center;
+            animation-delay: 3s;
+            /* animation-fill-mode:backwards; */
+            /* animation-timing-function:ease-in-out; */
+            /* animation-timing-function:ease-in; */
+            animation-timing-function:ease-in-out;
+        }
+        div{
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+        /* @keyframes prasad{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 400px;
+            }
+        } */
+        @keyframes prasad2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+            75%{
+                top: 0;
+                left: 250px;
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+           
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+    </div>
+</body>
+</html>

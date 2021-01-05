@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+            margin: 0px;
+            color: white;
+            padding: 0px;
+            }
+            header::before{
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+                content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0px;
+            left: 0px;
+            opacity: 0.4;
+            height: 100%;
+            width: 100%;
+
+            }
+        h1{
+            font-size: 4rem;
+        }
+        .navigation{
+            display: flex;
+            font-size: 20px;
+            font-family: 'Bree Serif', serif;
+        }
+        li{
+            list-style: none;
+            padding: 11px 19px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bree Serif', serif;
+        }
+        /* section::before{
+            content: "This is a containt"
+        }
+        
+        section::after{
+            content: "This is a containt 2"
+        } */
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+            <section>
+                <h1>Welcome to Coding World</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae dolorem odit voluptate, et totam iste quis labore eveniet incidunt ullam optio quidem voluptates quia explicabo numquam fuga facere animi ad doloremque officia consectetur similique.</p>
+            </section>
+            <hr>
+</body>
+</html>

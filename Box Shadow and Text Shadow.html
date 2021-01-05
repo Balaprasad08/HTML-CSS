@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            margin: 23px 12px;
+            background-color: greenyellow;
+            /* box-shadow:5px 10px slategrey; */
+            /* box-shadow:-5px -10px red; */
+            box-shadow:5px 10px 30px red;
+            /* box-shadow:-5px -10px 12px red; */
+            /* box-shadow:5px 10px 20px 20px red; */
+            /* box-shadow: 10px 8px red,20px 20px blue; */
+            /* box-shadow: inset 50px 20px orange; */
+            
+        }
+        .card h2{
+            text-shadow: 1.5px 2px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ab odio? Hic, nobis dicta non illo unde quas sapiente aliquid officiis ipsam itaque, temporibus architecto inventore suscipit veniam beatae veritatis repellendus, iure esse delectus.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ab odio? Hic, nobis dicta non illo unde quas sapiente aliquid officiis ipsam itaque, temporibus architecto inventore suscipit veniam beatae veritatis repellendus, iure esse delectus.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ab odio? Hic, nobis dicta non illo unde quas sapiente aliquid officiis ipsam itaque, temporibus architecto inventore suscipit veniam beatae veritatis repellendus, iure esse delectus.</p>
+        </div>
+    </div>
+</body>
+</html>
